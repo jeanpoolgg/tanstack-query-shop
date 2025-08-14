@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const productsApi = axios.create({
-    baseURL: 'https://fakestoreapi.com'
+    baseURL: 'http://localhost:3100'
 });
 
 export { productsApi }

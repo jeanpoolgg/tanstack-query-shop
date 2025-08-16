@@ -6,7 +6,7 @@ interface Options {
 }
 
 export const useProducts = ({filterKey}: Options) => {
-  
+    console.log("Este es filterKey", filterKey)
     const productsQuery = useQuery({
         queryKey: ['products', {filterKey}],
         queryFn: () => getProducts({filterKey}),
